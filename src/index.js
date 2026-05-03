@@ -17,7 +17,8 @@ function runApi(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let haikuElement = document.querySelector("#haiku");
-  haikuElement.innerHTML = "Generating Haiku....";
+  haikuElement.classList.remove("hidden");
+  haikuElement.innerHTML = `<div class="blink">⌛ Generating a Haiku about ${inspirationInput.value}</div>`;
 
   axios.get(apiUrl).then(generateHaiku);
 }
