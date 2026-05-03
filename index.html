@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Classic Haiku Generator</title>
   </head>
   <body>
     <div class="container">
       <h1>Classic AI Haiku Generator</h1>
       <main>
-        <div class="form">
+        <form id="haiku-form-submit" class="form">
           <input
             type="text"
             placeholder="Inspiration for your Haiku"
@@ -19,8 +20,11 @@
             class="form-input"
           />
           <input type="submit" class="form-submit" />
+        </form>
+        <div id="haiku" class="haiku">
+          Five syllables here, Seven more to tell the tale, Five to end the
+          thought.
         </div>
-        <div class="haiku">Haiku here</div>
       </main>
       <footer>
         This project was coded by
