@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Classic Haiku Generator</title>
   </head>
@@ -18,12 +19,16 @@
             autofocus
             required
             class="form-input"
+            id="form-input"
           />
           <input type="submit" class="form-submit" />
         </form>
         <div id="haiku" class="haiku">
-          Five syllables here, Seven more to tell the tale, Five to end the
-          thought.
+          Five syllables here,
+          <br />
+          Seven more to tell the tale,
+          <br />
+          Five to end the thought.
         </div>
       </main>
       <footer>
